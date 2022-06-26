@@ -4,7 +4,7 @@
   var myChart = echarts.init(document.querySelector(".bar .chart"));
   // 2. 指定配置项和数据
   var option = {
-    color: ["#2f89cf"],
+    color: ["#2f89cf"],  // 柱状图颜色
     tooltip: {
       trigger: "axis",
       axisPointer: {
@@ -18,7 +18,7 @@
       top: "10px",
       right: "0%",
       bottom: "4%",
-      containLabel: true
+      containLabel: true  // true 展示刻度标签
     },
     xAxis: [
       {
@@ -38,7 +38,7 @@
         // 修改刻度标签 相关样式
         axisLabel: {
           color: "rgba(255,255,255,.6) ",
-          fontSize: "12"
+          fontSize: 12
         },
         // 不显示x坐标轴的样式
         axisLine: {
@@ -335,7 +335,7 @@
       data: ["邮件营销", "联盟广告", "视频广告", "直接访问", "搜索引擎"],
       textStyle: {
         color: "rgba(255,255,255,.5)",
-        fontSize: "12"
+        fontSize: 12
       }
     },
 
@@ -602,7 +602,7 @@
       // 修改图例组件的文字为 12px
       textStyle: {
         color: "rgba(255,255,255,.5)",
-        fontSize: "12"
+        fontSize: 12
       }
     },
     series: [
@@ -666,7 +666,7 @@
       itemHeight: 10,
       textStyle: {
         color: "rgba(255,255,255,.5)",
-        fontSize: "12"
+        fontSize: 12
       }
     },
     series: [
