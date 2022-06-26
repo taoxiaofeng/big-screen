@@ -130,7 +130,7 @@ header {
 
       &>.chart {
         height: 3rem;
-        background: pink;
+        background: rgba(255, 255, 255, 0.2);
       }
     }
   }
@@ -204,6 +204,83 @@ header {
           line-height: .5rem;
           padding-top: .125rem;
         }
+      }
+    }
+  }
+
+  // 地图模块
+  .map {
+    height: 10.125rem;
+    position: relative;
+
+    // background: rgba(255, 255, 255, 0.2);
+    &>.map1 {
+      width: 6.475rem;
+      height: 6.475rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: url(../images/map.png) no-repeat;
+      background-size: 100% 100%;
+      opacity: .3;
+    }
+
+    &>.map2 {
+      width: 8.0375rem;
+      height: 8.0375rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: url(../images/lbx.png) no-repeat;
+      background-size: 100% 100%;
+      opacity: .6;
+      animation: rotate1 15s linear infinite;
+    }
+
+
+    &>.map3 {
+      width: 7.075rem;
+      height: 7.075rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: url(../images/jt.png) no-repeat;
+      background-size: 100% 100%;
+      opacity: .6;
+      animation: rotate2 15s linear infinite;
+    }
+
+    .chart {
+      width: 100%;
+      height: 10.125rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      // background: rgba(255, 255, 255, 0.2);
+    }
+
+    // map2 动画  顺时针旋转
+    @keyframes rotate1 {
+      form {
+        transform: translate(-50%, -50%) rotate(0deg); // 从0度开始旋转
+      }
+
+      to {
+        transform: translate(-50%, -50%) rotate(360deg); // 顺时针旋转一周 360度
+      }
+    }
+
+    // map3 动画  逆时针旋转
+    @keyframes rotate2 {
+      form {
+        transform: translate(-50%, -50%) rotate(0deg); // 从0度开始旋转
+      }
+
+      to {
+        transform: translate(-50%, -50%) rotate(-360deg); // 逆时针旋转一周 -360度
       }
     }
   }
